@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- styling -->
+     <style>
+        .home-main-section .lady-image {
+            background-image: url("{% static 'landing-page-girl.png' %}");
+        }
+      </style>
+    <!-- styling -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+   
+
+    <title>Soundwave</title>
+</head>
+<body class="container full-height-container">
+    <header class="main-header">
+        <a href="{% url 'home' %}" class="brand-logo">
+        <img src="{% static 'logo.svg' %}" alt="">
+        <div class="brand-logo-name">Soundwave</div>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="{% url 'discover' %}">Discover</a>
+                </li>
+                <li>
+                    <a href="{% url 'register' %}">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home-main-section">
+            <div class="img-wrapper">
+              <div class="lady-image"></div>
+            </div>
+            <div class="call-to-action">
+              <h1 class="title">Feel The Music</h1>
+              <span class="subtitle">Stream over 20 thousand songs with one click</span>
+              <a href="{% url 'register' %}" class="btn">Join Now</a>
+            </div>
+    </section>
+
+    <div class="home-page-circle-1"></div>
+    <div class="home-page-circle-2"></div>
+    <div class="home-page-circle-3"></div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- styling -->
+     <style>
+        .home-main-section .lady-image {
+            background-image: url("{% static 'landing-page-girl.png' %}");
+        }
+      </style>
+    <!-- styling -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+     <!-- js -->
+    <script src="{% static 'pick_genre.js' %}" defer></script> 
+
+
+    <title>Soundwave</title>
+</head>
+
+<body>
+    <h1> Welcome to Soul, {{ user }} Kindly pick your genre</h1>
+
+    <form action="" method="post" class="GenrePick">
+        {% csrf_token %} <!-- csrf token for security -->
+
+            {% for pickgenre in genres %}
+
+            <input type="checkbox" class="taskCheckbox" name="genre_select" id="{{ pickgenre }}" value="{{ pickgenre.id }}" onclick="removegenre()">
+            <label id="{{ pickgenre }}1" class="btn btn-secondary" for="{{ pickgenre }}"> {{ pickgenre }} </label>
+                    <br>
+                    <br>
+
+            {% endfor %}
+
+            <div class="buttons">
+                <button class="taskAdd btn" name="genreSelected" type="submit"><i class="fa fa-plus icon"></i>Continue</button>
+            </div> 
+    </form>
+
+</body>
+</html>
