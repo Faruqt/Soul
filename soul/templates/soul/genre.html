@@ -26,7 +26,11 @@
 
     <form action="" method="post" class="GenrePick">
         {% csrf_token %} <!-- csrf token for security -->
-
+        
+          <div>
+            <h3> Pick 3 genres</h3>
+          </div>
+           
             {% for pickgenre in genres %}
 
             <input type="checkbox" class="taskCheckbox" name="genre_select" id="{{ pickgenre }}" value="{{ pickgenre.id }}" onclick="removegenre()">
