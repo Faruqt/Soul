@@ -8,7 +8,6 @@
 SOUL/.vscode
 
 # venv
-SOUL/env
 soul/env
 .env/
 .venv/
