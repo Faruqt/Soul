@@ -19,7 +19,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .views import home, discover
 from genre.views import genres_view
-# from login_registration.views import login_view,logout_view, registerUserView
+from playlist.views import explore_view
+# from login_register.views import login_view,logout_view, registerUserView
 from login_register.views import registerUserView
 
 
@@ -32,4 +33,6 @@ urlpatterns = [
     # path('logout/', logout_view, name='logout'),
     path('register/', registerUserView, name='register'),
     path('pick_genres/', genres_view, name='genre'),
+    path('explore/', explore_view, name='explore'),
+
 ]

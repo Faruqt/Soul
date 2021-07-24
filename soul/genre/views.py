@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Genre,UsersGenre
 # Create your views here.
 
@@ -14,8 +14,9 @@ def genres_view(request):
             user_genre.save()  
             user_genre.user_genres.add(*picked_genre)
 
-    print(user)     
-    
+            if user is not None:
+                return redirect('explore')
+
     context = {
         "genres":genre,
         "users":user,
