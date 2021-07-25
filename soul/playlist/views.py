@@ -4,8 +4,10 @@ from .models import Explore, Playlist
 
 def explore_view(request):
     user= request.user
+    explore = Explore.objects.all()
 
     context = {
+        "explore":explore
     }
-    
+
     return render(request, 'soul/explore.html', context)
