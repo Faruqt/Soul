@@ -18,3 +18,11 @@ def explore_view(request):
     }
 
     return render(request, 'soul/explore.html', context)
+
+def playlist_view(request):
+
+    context={
+
+    }
+
+    return render(request, 'soul/playlist.html', context)
