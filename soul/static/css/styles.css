@@ -117,3 +117,9 @@ body{
     visibility: hidden; 
     display:none;
 }
+/* continue disabled button style  */
+#continue {
+    background-color: #696a70;
+    color: #525357;
+  }
+    
