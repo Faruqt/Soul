@@ -22,8 +22,10 @@
 </head>
 
 <body>
-    <h1> Welcome to Soul, {{ user }} Kindly pick your genre</h1>
-
+    <h1> Welcome to Soul, {{ user }}</h1>
+    <!-- <h3>Let us help you tailor your music experience</h3> -->
+    <h3> Pick three genres to tailor your music experience</h3>
+    
     <form action="" method="post" class="GenrePick">
         {% csrf_token %} <!-- csrf token for security -->
         
