@@ -13,6 +13,9 @@ document.getElementById("Jazz").onclick=function() {removeJazz()};
             document.getElementById("HipHop/Rap1").style.display = "none";
             document.getElementById("Rock1").style.display = "none";
             document.getElementById("Dance1").style.display = "none";
+            document.getElementById("continue").removeAttribute("disabled");
+            document.getElementById("continue").style.backgroundColor= "#1762A7";
+            document.getElementById("continue").style.color= "#ffffff"
         }
         
     }
@@ -31,6 +34,9 @@ document.getElementById("AfroPop").onclick=function() {removeAfroPop()};
             document.getElementById("HipHop/Rap1").style.display = "none";
             document.getElementById("Rock1").style.display = "none";
             document.getElementById("Dance1").style.display = "none";
+            document.getElementById("continue").removeAttribute("disabled");
+            document.getElementById("continue").style.backgroundColor= "#1762A7";
+            document.getElementById("continue").style.color= "#ffffff"
         }
         
     }
@@ -49,6 +55,9 @@ document.getElementById("AfroBeats").onclick=function() {removeAfroBeats()};
             document.getElementById("HipHop/Rap1").style.display = "none";
             document.getElementById("Rock1").style.display = "none";
             document.getElementById("Dance1").style.display = "none";
+            document.getElementById("continue").removeAttribute("disabled");
+            document.getElementById("continue").style.backgroundColor= "#1762A7";
+            document.getElementById("continue").style.color= "#ffffff"
         }
         
     }
@@ -67,6 +76,9 @@ document.getElementById("Rythm and Blues").onclick=function() {removeBlues()};
             document.getElementById("HipHop/Rap1").style.display = "none";
             document.getElementById("Rock1").style.display = "none";
             document.getElementById("Dance1").style.display = "none";
+            document.getElementById("continue").removeAttribute("disabled");
+            document.getElementById("continue").style.backgroundColor= "#1762A7";
+            document.getElementById("continue").style.color= "#ffffff"
         }
         
     }
@@ -85,6 +97,9 @@ document.getElementById("HipHop/Rap").onclick=function() {removeRap()};
             document.getElementById("HipHop/Rap1").style.display = "none";
             document.getElementById("Rock1").style.display = "none";
             document.getElementById("Dance1").style.display = "none";
+            document.getElementById("continue").removeAttribute("disabled");
+            document.getElementById("continue").style.backgroundColor= "#1762A7";
+            document.getElementById("continue").style.color= "#ffffff"
         }
         
     }
@@ -103,6 +118,9 @@ document.getElementById("Rock").onclick=function() {removeRock()};
             document.getElementById("HipHop/Rap1").style.display = "none";
             document.getElementById("Rock1").style.display = "none";
             document.getElementById("Dance1").style.display = "none";
+            document.getElementById("continue").removeAttribute("disabled");
+            document.getElementById("continue").style.backgroundColor= "#1762A7";
+            document.getElementById("continue").style.color= "#ffffff"
         }
         
     }
@@ -121,6 +139,9 @@ document.getElementById("Dance").onclick=function() {removeDance()};
             document.getElementById("HipHop/Rap1").style.display = "none";
             document.getElementById("Rock1").style.display = "none";
             document.getElementById("Dance1").style.display = "none";
+            document.getElementById("continue").removeAttribute("disabled");
+            document.getElementById("continue").style.backgroundColor= "#1762A7";
+            document.getElementById("continue").style.color= "#ffffff"
         }
     }
 
