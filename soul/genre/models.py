@@ -15,8 +15,3 @@ class UsersGenre(models.Model):
    def __str__(self):
       return f"{self.user.username}'s genres"
 
-   # def __str__(self):
-   #      return f"Genre created"
-
-   # def get_genres(self):
-   #      return self.user_genres.all()
