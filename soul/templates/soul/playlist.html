@@ -10,12 +10,23 @@
     <!-- styling -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
-    <title>Explore</title>
+    <title>Playlist</title>
 
 </head>
 
 <body>
+    <h1>Your playlist</h1>
 
+
+    <ul class=""> 
+        {% for song in your_playlist %}
+            <li class="MusicList">
+                <span>{{ song }}</span>
+                <button class="" name="" formnovalidate="" type="" ><i class="fa fa-trash-o icon"></i></button>
+                <!-- change to play icon -->
+            </li>  
+        {% endfor %}
+    </ul> <!--end Music-List -->
 </body>
 
 </html>
