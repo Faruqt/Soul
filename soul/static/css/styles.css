@@ -113,13 +113,15 @@ body{
     background-color: #2796ff;
   }
 
-.GenrePick input{
+/* .GenrePick input, .MusicList input{
     visibility: hidden; 
     display:none;
-}
+} */
 /* continue disabled button style  */
-#continue {
+#continue, #playlistAdd {
     background-color: #696a70;
     color: #525357;
   }
-    
+/* .MusicList label{
+    background-color: rgb(23, 98, 167);
+} */
