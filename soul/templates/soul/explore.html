@@ -10,6 +10,9 @@
     <!-- styling -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <!-- js -->
+    <script src="{% static 'pick_music.js' %}" defer></script>
+
     <title>Explore</title>
 
 </head>
@@ -17,17 +20,19 @@
 <body>
     <h1> LETS EXPLORE</h1>
 
-    <form action="" method="post" class="GenrePick"></form>
+    <form action="" method="post" class="Explore">
+        {% csrf_token %} <!-- csrf token for security -->
         <ul class=""> 
             {% for explorer in explore %}
-                <li class="currentTaskItem">
+                <li class="MusicList">
                     <span>{{ explorer }}</span>
-                    <button class=" " name="taskDelete" formnovalidate="" type="submit" ><i class="fa fa-plus icon"></i></button>    
+                    <input type="checkbox" class="taskCheckbox" name="music_select" id="{{ explorer }}" value="{{ explorer.id }}" >
+                    <label class="btn btn-secondary" for="{{ explorer }}" onclick="musicAdded.call(this)"> <i class="fa fa-plus icon"></i> </label>   
                 </li>  
             {% endfor %}
         </ul> <!--end Music-List -->
         <div class="buttons">
-            <button id ="continue" class="taskAdd btn" name="genreSelected" type="submit" disabled><i class="fa fa-plus icon"></i>Add to playlist</button>
+            <button id ="playlistAdd" class="taskAdd btn" name="music_selected" type="submit" disabled><i class="fa fa-plus icon"></i>Add to playlist</button>
         </div> 
     </form>
 

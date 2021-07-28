@@ -17,9 +17,7 @@ class Explore(models.Model):
 
 class Playlist(models.Model): 
     user= models.OneToOneField(User, on_delete=models.CASCADE)
-    song = models.CharField(max_length=50)  
-    artist= models.CharField(max_length=20) 
-    genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
+    playlist = models.ManyToManyField(Explore)
 
     class Meta:
       verbose_name = ("Playlist")
