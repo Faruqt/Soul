@@ -16,7 +16,7 @@
     font-size: 3em;
   }
 
-.join-form {
+.join-form{
     background-color: #202027;
     width: 50vw;
     max-width: 50%;
@@ -25,20 +25,54 @@
     margin-bottom: 2rem;
   }
   
+.login-form{
+  background-color: #202027;
+  width: 50vw;
+  max-width: 50%;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.login-form input{
+outline: none;
+background: none;
+border: 1px solid #2E3852;
+font-size: 1em;
+padding: .5em;
+color: inherit;
+border-radius: 5px;
+}
+
 .input-group {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
   }
+
 .input-group:last-child {
     margin-bottom: 0;
   }
   
-.input-group label {
+.input-group label, .form-group label {
     font-weight: bold;
     margin-bottom: .5rem;
   }
-  
+
+.login-form label{
+  font-weight: bold;
+  margin: .5rem 0;
+  display:inline-block;
+}
+
+.loginbtn .btn{
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.asteriskField {
+    display: none;
+}
+
 .input-group input {
     outline: none;
     background: none;
@@ -48,6 +82,10 @@
     color: inherit;
     border-radius: 5px;
   }
+
+.form-group input{
+  width: 100%;
+}
   
 .input-group input:focus {
     border-color: #596da0;

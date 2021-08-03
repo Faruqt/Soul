@@ -34,32 +34,32 @@
                         <a href="{% url 'discover' %}">Discover</a>
                     </li>
                     <li>
-                        <a href="{% url 'register' %}">Join</a>
+                      <a href="{% url 'login' %}">Login</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <section class="join-main-section">
-            <h1 class="join-text">
+            <h3 class="join-text">
               Join the
               <span class="accent-text">fun.</span>
-            </h1>
+            </h3>
             
             <form method="POST" action="" class="join-form">
               {% csrf_token %}    
               
               <div class="input-group">
-                  <label>Username:</label>
+                  <label>Username</label>
                   {{ form.username }}
               </div>
 
               <div class="input-group">
-                  <label>Enter Password:</label>
+                  <label>Enter Password</label>
                   {{ form.password1 }}
               </div>
 
               <div class="input-group">
-                  <label>Confirm Password:</label>
+                  <label>Confirm Password</label>
                   {{ form.password2 }}
               </div>
       
@@ -81,6 +81,7 @@
               </div>
 
             </form>
+            
           </section>
     </div>
 
