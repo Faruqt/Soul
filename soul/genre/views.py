@@ -1,7 +1,10 @@
 from django.shortcuts import render,redirect
 from .models import Genre,UsersGenre
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 
+@login_required
 def genres_view(request):
     user= request.user
     genre = Genre.objects.all()
