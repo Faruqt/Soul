@@ -30,6 +30,9 @@
                     <a href="{% url 'discover' %}">Discover</a>
                 </li>
                 <li>
+                  <a href="{% url 'playlist' %}">Playlist</a>
+                </li>
+                <li>
                     <a href="{% url 'register' %}">Join</a>
                 </li>
             </ul>
@@ -43,7 +46,9 @@
             <div class="call-to-action">
               <h1 class="title">Feel The Music</h1>
               <span class="subtitle">Stream over 20 thousand songs with one click</span>
-              <a href="{% url 'register' %}" class="btn">Join Now</a>
+              <div class="join-btn">
+                <a href="{% url 'register' %}" class="btn">Join Now</a>
+              </div>
             </div>
     </section>
 
