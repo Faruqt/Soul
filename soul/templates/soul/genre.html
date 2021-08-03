@@ -22,29 +22,28 @@
 </head>
 
 <body>
-    <h1> Welcome to Soul, {{ user }}</h1>
-    <!-- <h3>Let us help you tailor your music experience</h3> -->
-    <h3> Pick three genres to tailor your music experience</h3>
-    
+
+    <div class="Welcome-text">
+      <h1> Welcome to  Soundwave, <span class="user">{{ user }}</span> </h1>
+      <!-- <h3>Let us help you tailor your music experience</h3> -->
+      <h3> Pick three(3) genres to tailor your music experience</h3>
+    </div>
+   
     <form action="" method="post" class="GenrePick">
         {% csrf_token %} <!-- csrf token for security -->
         
-          <div>
-            <h3> Pick 3 genres</h3>
-          </div>
-           
+          <ul class="GenresList"> 
             {% for pickgenre in genres %}
-
-            <input type="checkbox" class="taskCheckbox" name="genre_select" id="{{ pickgenre }}" value="{{ pickgenre.id }}">
-            <label id="{{ pickgenre }}1" class="btn btn-secondary" for="{{ pickgenre }}"> {{ pickgenre }} </label>
-                    <br>
-                    <br>
-
+              <li class="GenreList">
+                <input type="checkbox" class="taskCheckbox" name="genre_select" id="{{ pickgenre }}" value="{{ pickgenre.id }}">
+                <label id="{{ pickgenre }}1" class="btn btn-secondary label-btn" for="{{ pickgenre }}"> {{ pickgenre }} </label>
+              </li>    
             {% endfor %}
+          </ul> <!--end Genre-List -->
 
-            <div class="buttons">
-                <button id ="continue" class="taskAdd btn" name="genreSelected" type="submit" disabled><i class="fa fa-plus icon"></i>Continue</button>
-            </div> 
+          <div class="buttons">
+             <button id ="continue" class="taskAdd btn" name="genreSelected" type="submit" disabled><i class="fa fa-plus icon"></i>Continue</button>
+          </div> 
     </form>
 
 </body>
