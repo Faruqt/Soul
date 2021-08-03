@@ -20,19 +20,20 @@ from django.conf.urls.static import static
 from .views import home, discover
 from genre.views import genres_view
 from playlist.views import explore_view,playlist_view
-# from login_register.views import login_view,logout_view, registerUserView
-from login_register.views import registerUserView
+from login_register.views import login_view,logout_view, registerUserView
+from profiles.views import my_profile_view
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('discover/', discover, name="discover"),
-    # path('login/', login_view, name='login'),
-    # path('logout/', logout_view, name='logout'),
+    path('login/', login_view, name='login'),
+    path('logout/', logout_view, name='logout'),
     path('register/', registerUserView, name='register'),
     path('pick_genres/', genres_view, name='genre'),
     path('explore/', explore_view, name='explore'),
     path('playlist/', playlist_view, name='playlist'),
-
+    path('profile/', my_profile_view, name='profile'),
 ]
