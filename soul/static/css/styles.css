@@ -12,6 +12,11 @@ body{
     font-size: 1.2rem;
     color: white;
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
 }
 
 .full-height-container{
@@ -74,8 +79,8 @@ body{
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
     padding: 0 40px;
     flex-grow: 1;
 } 
@@ -113,15 +118,100 @@ body{
     background-color: #2796ff;
   }
 
-/* .GenrePick input, .MusicList input{
+.GenrePick input, .MusicList input{
     visibility: hidden; 
     display:none;
-} */
+}
 /* continue disabled button style  */
 #continue, #playlistAdd {
     background-color: #696a70;
     color: #525357;
+    margin-bottom: 1rem;
   }
-/* .MusicList label{
+
+.GenreList label{
     background-color: rgb(23, 98, 167);
-} */
+    width:80%;
+    display:inline-block;
+}
+
+.GenrePick{
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #2E3852;
+}
+
+@media (max-width: 800px) {
+    .GenrePick{
+        width: 50%;
+        }
+}
+@media (max-width: 650px) {
+.GenrePick{
+    width: 55%;
+    }
+}
+
+@media (max-width: 520px) {
+.GenrePick{
+    width: 60%;
+    }
+}
+
+@media (max-width: 462px) {
+    .GenrePick{
+        top: 64%;
+    }
+}
+
+@media (max-width: 420px) {
+.GenrePick{
+    width: 70%;
+    }
+}
+.GenrePick ul, .GenrePick .buttons{
+    text-align: center;
+    padding-left: 0px;
+}
+
+.GenreList{
+    margin-top: 1rem;
+}
+
+.Welcome-text{
+    text-align: center;
+}
+.Welcome-text .user{
+    color:#4752bd;
+    text-transform: capitalize;
+}
+
+/* explore page styling */
+
+/* explore table width */
+.Explorerr{
+    width:100%
+}
+/* playlist table width */
+.Explorerrr{
+    width:120%
+}
+
+.Explorerr td, .Explorerrr td{
+    text-align:left;
+    white-space:nowrap
+}
+
+.Explorerr th, .Explorerrr th{
+    text-align:left;
+    color: #878bb5
+}
+
+table{
+    border-spacing:15px;
+}

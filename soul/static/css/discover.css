@@ -7,7 +7,7 @@
 
 .discover-main-section .covers-image {
     width: 60vw;
-    margin-left: 6rem;
+    /* margin-left: 6rem; */
     height: auto;
     max-width: 350px;
   }
@@ -18,6 +18,7 @@
     /* align-items: flex-start; */
     margin: 1rem;
     align-self: center;
+    text-align: center;
 }
 
 .icon-section {
@@ -56,4 +57,9 @@
       width: auto;
     } 
   } 
+
+.input-group{
+  margin-top: 2rem;
+  text-align: center;
+}
   

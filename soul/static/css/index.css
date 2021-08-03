@@ -29,6 +29,7 @@
     align-items: flex-start;
     margin: 1rem;
     align-self: center;
+    text-align: center;
   }
   
 @media (max-width: 932px) {
@@ -39,9 +40,20 @@
     .home-main-section {
       justify-content: center;
     }
+
+    .join-btn{
+      text-align: center;
+    }
+
+    .home-main-section .call-to-action {
+      align-items: revert;
+    }
     
   }
-
+.buttons{
+  text-align: center;
+  margin-top: 2rem;
+}
 .home-page-circle-1 {
     position: absolute;
     width: 20vw;
