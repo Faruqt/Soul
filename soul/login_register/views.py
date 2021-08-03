@@ -22,7 +22,7 @@ def login_view(request):
                 if request.GET.get('next'):
                     return redirect(request.GET.get('next'))
                 else:
-                    return redirect('playlist:mainpage')
+                    return redirect('explore')
     else:
         form = LoginForm()
 
