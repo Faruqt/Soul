@@ -8,6 +8,7 @@ class Explore(models.Model):
     time= models.CharField(max_length=5)
     artist= models.CharField(max_length=20) 
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
+    play=models.CharField(max_length=150, blank=True, null=True)
 
     class Meta:
       verbose_name = ("Explore")
