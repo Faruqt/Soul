@@ -37,3 +37,6 @@ urlpatterns = [
     path('playlist/', playlist_view, name='playlist'),
     path('profile/', my_profile_view, name='profile'),
 ]
+
+urlpatterns += static (settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+urlpatterns += static (settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
