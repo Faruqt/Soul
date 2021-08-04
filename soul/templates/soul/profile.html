@@ -47,8 +47,7 @@
                 <div class="text-center">
                 <img src="{{profile.avatar.url}}" alt="my-profile" class="avatar-big">
                 </div>
-            
-                <br>
+
                 <form class= "profile-form" action="" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{form|crispy}}

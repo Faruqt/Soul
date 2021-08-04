@@ -54,7 +54,7 @@
                 <tr>
                       <td>{{songs.song}}</td>
                       <td>
-                        <i class="fa fa-play icon"></i>
+                        <a href="{{songs.play}}" class=play> <i class="fa fa-play icon"></i> </a>
                       </td>
                       <td >{{songs.time}}</td>
                       <td >{{songs.artist}}</td>
@@ -74,9 +74,11 @@
       <div class="container">
         <nav class="footer-nav">
           <ul>
-            <li><a href="{% url 'discover' %}"> <i class="fa fa-info-circle"></i><span class="footer-icon-text"> About Us </span> </a>
+            <li>
+              <a href="{% url 'discover' %}"> <i class="fa fa-info-circle"></i><span class="footer-icon-text"> About Us </span> </a>
             </li>
-            <li><a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/" class="social-link"><i class="fa fa-linkedin-square"></i> <span class="footer-icon-text"> Contact</span> </a>
+            <li>
+              <a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/" class="social-link"><i class="fa fa-linkedin-square"></i> <span class="footer-icon-text"> Contact</span> </a>
             </li>
           </ul>
         </nav>

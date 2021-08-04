@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 @login_required
-def explore_view(request):
+def explore_view(request):  
     user= request.user
     user_genre = UsersGenre.objects.filter(user=user) 
 
@@ -15,7 +15,7 @@ def explore_view(request):
             genre2=genre.user_genres.all()[1]
             genre3=genre.user_genres.all()[2]
 
-    explore = Explore.objects.filter(genre__genres=genre1) | Explore.objects.filter(genre__genres =genre2) | Explore.objects.filter(genre__genres =genre3)  
+    explore = Explore.objects.filter(genre__genres=genre1) | Explore.objects.filter(genre__genres =genre2) | Explore.objects.filter(genre__genres =genre3) 
 
     if request.method == "POST": 
         if "music_selected" in request.POST:

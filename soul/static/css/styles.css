@@ -146,6 +146,11 @@ ul{
     background-color: rgb(23, 98, 167);
     width:80%;
     display:inline-block;
+
+    opacity:1;
+    transition : all .3s;
+    -webkit-transition : all .3s;
+    -moz-transition : all .3s;
 }
 
 .GenrePick{
@@ -319,6 +324,9 @@ table{
 .profile-buttons{
     text-align: center;
 }
+.profile-buttons a{
+    padding: .65rem 1.75rem;
+}
 
 .profile-form a{
     color: #787ebf;
@@ -345,9 +353,9 @@ table{
         margin: 0 100px;
     }
 }
-@media (max-width: 610px) {
+@media (max-width: 620px) {
     .profile-form{
-        margin: 0 50px;
+        margin: 0 30px;
     }
 }
 
@@ -356,14 +364,14 @@ table{
     margin: 0 30px;
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 399px) {
     .profile-form {
     margin: 0 20px;
     }
 }
-@media (max-width: 370px) {
+@media (max-width: 379px) {
     .profile-form {
-    margin: 0 10px;
+    margin: 0 15px;
     }
 }
 
@@ -404,4 +412,7 @@ table{
 }
 .text-center{
     text-align: center;
+}
+.play:visited, .play {
+    color: #ffffff;
 }
