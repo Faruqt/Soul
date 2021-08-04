@@ -30,12 +30,12 @@
             </a>
             <nav class="main-nav">
                 <ul>
-                    <li>
-                        <a href="{% url 'discover' %}">Discover</a>
-                    </li>
-                    <li>
-                      <a href="{% url 'login' %}">Login</a>
-                    </li>
+                  <li>
+                    <a href="{% url 'discover' %}"> <i class="fa fa-globe"></i> <span class="header-icon-text"> Discover </span> </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'login' %}"> <i class="fa fa-sign-in"></i> <span class="header-icon-text"> Login </span></a>
+                  </li>                
                 </ul>
             </nav>
         </header>
@@ -68,8 +68,8 @@
                   {% for field in form %}
                   {% for error in field.errors %}
                           
-                    <span class=""><i class="fa fa-exclamation-triangle"></i></span>
-                    {{ error }}
+                    <span class=""><i class="fa fa-exclamation-triangle"></i>{{ error }}</span>
+                    
                     <br>
 
                   {% endfor %}
@@ -89,33 +89,27 @@
     <div class="join-page-circle-2"></div>
 
     <footer class="main-footer">
-        <div class="container">
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-nav">
-            <ul>
-              <li>
-                <a href="#" class="social-link">
-                  <img src="{% static 'twitter.svg' %}">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" class="social-link">
-                  <img src="{% static 'facebook.svg' %}">
-                  Facebook
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-    </footer>
-    
-
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="{% url 'discover' %}"> <i class="fa fa-info-circle"></i><span class="footer-icon-text"> About Us </span> </a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/" class="social-link"><i class="fa fa-linkedin-square"></i> <span class="footer-icon-text"> Contact</span> </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="https://twitter.com/_Ace_II/"><i class="fa fa-twitter"></i><span class="footer-icon-text">Twitter</span>  </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/faruq.t/"><i class="fa fa-instagram"></i> <span class="footer-icon-text">Instagram</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </footer>
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>

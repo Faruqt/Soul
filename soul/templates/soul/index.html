@@ -12,6 +12,7 @@
         }
       </style>
     <!-- styling -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
    
@@ -27,13 +28,13 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a href="{% url 'discover' %}">Discover</a>
+                  <a href="{% url 'discover' %}"> <i class="fa fa-globe"></i> <span class="header-icon-text"> Discover </span> </a>
+              </li>
+                <li>
+                  <a href="{% url 'playlist' %}"> <i class="fa fa-music"></i> <span class="header-icon-text"> Playlist </span> </a>
                 </li>
                 <li>
-                  <a href="{% url 'playlist' %}">Playlist</a>
-                </li>
-                <li>
-                    <a href="{% url 'register' %}">Join</a>
+                    <a href="{% url 'register' %}"> <i class="fa fa-user-plus"></i> <span class="header-icon-text"> Join </span></a>
                 </li>
             </ul>
         </nav>

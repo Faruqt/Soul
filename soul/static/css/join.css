@@ -16,24 +16,16 @@
     font-size: 3em;
   }
 
-.join-form{
+.join-form, .login-form{
     background-color: #202027;
     width: 50vw;
     max-width: 50%;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem !important;
     border-radius: 20px;
     margin-bottom: 2rem;
+    border: none !important; 
   }
   
-.login-form{
-  background-color: #202027;
-  width: 50vw;
-  max-width: 50%;
-  padding: 2rem 4rem;
-  border-radius: 20px;
-  margin-bottom: 2rem;
-}
-
 .login-form input{
 outline: none;
 background: none;
@@ -87,8 +79,10 @@ border-radius: 5px;
   width: 100%;
 }
   
-.input-group input:focus {
-    border-color: #596da0;
+.form-control:focus {
+  background-color: transparent;
+  border-color: #596da0;
+  color: white;
   }
 
 /* .reg_error{

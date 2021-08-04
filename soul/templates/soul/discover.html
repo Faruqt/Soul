@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/discover.css' %}">
     <title>Soundwave-Discover</title>
@@ -18,15 +20,15 @@
             </a>
             <nav class="main-nav">
                 <ul>
-                    <li>
-                        <a href="{% url 'discover' %}">Discover</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'register' %}">Join</a>
-                    </li>
-                    <li>
-                      <a href="{% url 'login' %}">Login</a>
-                    </li>
+                  <li>
+                    <a href="{% url 'playlist' %}"> <i class="fa fa-music"></i> <span class="header-icon-text"> Playlist </span> </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'register' %}"> <i class="fa fa-user"></i> <span class="header-icon-text"> Join </span></a>
+                  </li>  
+                  <li>
+                    <a href="{% url 'login' %}"><i class="fa fa-sign-in"></i> <span class="header-icon-text"> Login </span></a>
+                  </li>                   
                 </ul>
             </nav>
         </header>
@@ -49,38 +51,34 @@
               </div>
               By joining you can benefit by listening to the latest albums released.
               <div class="input-group">
-                <a href="{% url 'explore' %}" class="btn">Explore</a>
+                <a href="{% url 'explore' %}" class="btn"><i class="fa fa-globe"></i> Explore</a>
               </div>
             </div>
             <img class="covers-image" src="{% static 'covers.jpg' %}">
           </section>
     </div>
     <footer class="main-footer">
-        <div class="container">
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-nav">
-            <ul>
-              <li>
-                <a href="#" class="social-link">
-                  <img src="{% static 'twitter.svg' %}">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" class="social-link">
-                  <img src="{% static 'facebook.svg' %}">
-                  Facebook
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-    </footer>
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="{% url 'discover' %}"> <i class="fa fa-info-circle"></i><span class="footer-icon-text"> About Us </span> </a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/" class="social-link"><i class="fa fa-linkedin-square"></i> <span class="footer-icon-text"> Contact</span> </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="https://twitter.com/_Ace_II/"><i class="fa fa-twitter"></i><span class="footer-icon-text">Twitter</span>  </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/faruq.t/"><i class="fa fa-instagram"></i> <span class="footer-icon-text">Instagram</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </footer>
     
 </body>
 </html>

@@ -27,13 +27,13 @@
             <nav class="main-nav">
                 <ul>
                   <li>
-                    <a href="{% url 'playlist' %}">Playlist</a>
+                    <a href="{% url 'playlist' %}"> <i class="fa fa-music"></i> <span class="header-icon-text"> Playlist </span> </a>
                 </li>
                 <li>
-                    <a href="{% url 'profile' %}">Profile</a>
+                    <a href="{% url 'profile' %}"> <i class="fa fa-user"></i> <span class="header-icon-text"> Profile </span></a>
                 </li>  
                 <li>
-                    <a href="{% url 'logout' %}">Logout</a>
+                    <a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> <span class="header-icon-text"> Logout </span></a>
                 </li>                   
                 </ul>
             </nav>
@@ -48,7 +48,7 @@
                 <table class="Explorerr">
                     <tr>
                       <th>Name</th>
-                      <th><i class="fa fa-plus icon"></i></th>
+                      <th class="MusicList"><i class="fa fa-plus icon"></i></th>
                       <th>Time</th>
                       <th>Artist</th>
                       <th>Genre</th>
@@ -58,7 +58,7 @@
                       <td>{{explorer.song}}</td>
                       <td class="MusicList">
                         <input type="checkbox" class="taskCheckbox" name="music_select" id="{{ explorer }}" value="{{ explorer.id }}" >
-                        <label class="btn btn-secondary" for="{{ explorer }}" onclick="musicAdded.call(this)"> <i class="fa fa-plus icon"></i> </label>   
+                        <label class="btn-secondary add-btn" for="{{ explorer }}" onclick="musicAdded.call(this)"> <i class="fa fa-plus icon"></i> </label>   
                       </td>
                       <td >{{explorer.time}}</td>
                       <td >{{explorer.artist}}</td>
@@ -71,8 +71,34 @@
                     <button id ="playlistAdd" class=" btn" name="music_selected" type="submit" disabled><i class="fa fa-plus icon"></i>Add to playlist</button>
                 </div> 
             </form>
-
-          </section>
+        </section>
     </div>
+
+    <div class="home-page-circle-1"></div>
+    <div class="home-page-circle-2"></div>
+    <div class="home-page-circle-4"></div>
+
+    <footer class="main-footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="{% url 'discover' %}"> <i class="fa fa-info-circle"></i><span class="footer-icon-text"> About Us </span> </a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/faruq-abdulsalam-b2847b160/" class="social-link"><i class="fa fa-linkedin-square"></i> <span class="footer-icon-text"> Contact</span> </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="https://twitter.com/_Ace_II/"><i class="fa fa-twitter"></i><span class="footer-icon-text">Twitter</span>  </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/faruq.t/"><i class="fa fa-instagram"></i> <span class="footer-icon-text">Instagram</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </footer>
 </body>
 </html>

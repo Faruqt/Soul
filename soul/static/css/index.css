@@ -86,7 +86,7 @@
     overflow: hidden;
   } 
 
-.home-page-circle-3::before{
+.home-page-circle-3::before, .home-page-circle-4::before{
   content: '';
   position: absolute;
   transform: translate(40%, 40%);
@@ -94,5 +94,25 @@
   width: 100%;
   border-radius: 50%;
   background-color:  rgb(23, 98, 167, .1);
+}
+
+.home-page-circle-4 {
+  position: absolute;
+  width:  45vw;
+  height: 45vw;
+  bottom: 0; 
+  right: 0;
+  z-index: -1;
+} 
+
+@media (max-width: 600px) {
+.home-page-circle-1 {
+    bottom: 20vw;
+    left: 3vw;
+  }
+.home-page-circle-3 {
+    bottom: 20vw; 
+    overflow: unset;
+  } 
 
 }
