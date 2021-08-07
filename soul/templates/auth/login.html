@@ -35,16 +35,17 @@
                       <a href="{% url 'discover' %}"> <i class="fa fa-globe"></i> <span class="header-icon-text"> Discover </span> </a>
                     </li>
                     <li>
-                      <a href="{% url 'register' %}"> <i class="fa fa-sign-in"></i> <span class="header-icon-text"> Join </span></a>
+                      <a href="{% url 'register' %}"> <i class="fa fa-user-plus"></i> <span class="header-icon-text"> Join </span></a>
                     </li>
                 </ul>
             </nav>
         </header>
         <section class="join-main-section">
-            <h1 class="join-text">
-              Join the
-              <span class="accent-text">fun.</span>
+          <div class="join-name">
+            <h1 class="join-text welcome-text">
+              Welcome Back !
             </h1>
+          </div>
 
             <form action="" method="POST" class="p-3 border border-2 login-form">
               {% csrf_token %}
