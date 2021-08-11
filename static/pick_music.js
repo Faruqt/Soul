@@ -1,12 +1,12 @@
 var i=0
 
 function musicAdded() {
-    if (this.style.backgroundColor === "rgb(86, 90, 101)"){
-        this.style.backgroundColor = "rgb(23, 98, 167)"
+    if (this.style.backgroundColor === "rgb(23, 98, 167)"){
+        this.style.backgroundColor = "rgb(86, 90, 101)"
         i--
     }    
     else {
-        this.style.backgroundColor ="rgb(86, 90, 101)"
+        this.style.backgroundColor ="rgb(23, 98, 167)"
         i++
     }
     console.log(i)
