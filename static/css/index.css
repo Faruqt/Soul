@@ -97,6 +97,7 @@ margin-top: 2rem;
   bottom: 0; 
   right: 0;
   z-index: -1;
+  overflow: hidden;
 } 
 
 .home-page-circle-3::before, .home-page-circle-4::before{
