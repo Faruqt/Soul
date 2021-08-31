@@ -7,6 +7,7 @@
 
 .discover-main-section .covers-image {
   width: 60vw;
+  /* margin-left: 6rem; */
   height: auto;
   max-width: 350px;
 }
@@ -14,6 +15,7 @@
 .discover-main-section .call-to-action{
   display: flex;
   flex-direction: column;
+  /* align-items: flex-start; */
   margin: 1rem;
   align-self: center;
   text-align: center;
