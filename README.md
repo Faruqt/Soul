@@ -19,7 +19,7 @@
 
 ## 🤔What is Soul?
 
-Soul is a music web app built with django and javascript. It enables users to listen to music present on their palylist and manage playlists of curated songs. The app has following features:
+Soul is a music web app built with django and javascript. It enables users to listen to music present on their playlist and manage playlists of curated songs. The app has following features:
 
 - Sign up
 - Sign in
