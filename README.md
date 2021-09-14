@@ -1,6 +1,5 @@
 <p align="center">
     <img alt="music-notes-logo" src="./static/covers.jpg" width="300">
-  </a>
 </p>
 <h1 align="center">
   Soul
